@@ -1,8 +1,8 @@
-namespace DataAccess.Domain
+namespace RanApp.DataAccess.Domain
 {
     public class BaseDomain
     {
-        public long Id { get; set; }
+        public string Id { get; set; }
 
         public DateTime CreatedDate { get; set; }        
     }

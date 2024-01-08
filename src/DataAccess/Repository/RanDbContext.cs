@@ -1,7 +1,7 @@
-using DataAccess.Domain;
+using RanApp.DataAccess.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Repository
+namespace RanApp.DataAccess.Repository
 {
     public class RanDbContext : DbContext
     {

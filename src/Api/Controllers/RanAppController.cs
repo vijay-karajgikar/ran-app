@@ -1,21 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RanApp.Models.Request;
 
 namespace RanApp.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/ran/[controller]")]
     public class RanAppController : ControllerBase
     {
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpPost("appointments")]
+        public async Task<IActionResult> CreateAppointment(
+            [FromBody] CreateAppointmentRequest request)
         {
-            return await Task.FromResult(Ok(new {
-                message = "Hello World"
-            }));
+            return await Task.FromResult(Ok());
         }
+
     }
 }

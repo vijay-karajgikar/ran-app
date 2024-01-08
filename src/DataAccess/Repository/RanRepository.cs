@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using DataAccess.Domain;
+using RanApp.DataAccess.Domain;
 
-namespace DataAccess.Repository
+namespace RanApp.DataAccess.Repository
 {
     public class RanRepository<T> : IRanRepository<T> where T : BaseDomain
     {

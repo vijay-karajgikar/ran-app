@@ -1,9 +1,9 @@
-using DataAccess.Repository;
+using RanApp.DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DataAccess.Extensions
+namespace RanApp.DataAccess.Extensions
 {
     public static class DataAccessRegistrations
     {

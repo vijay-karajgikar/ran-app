@@ -1,6 +1,7 @@
-namespace RanApp.Models.RanModels
+
+namespace Models.Request.RiderAddress
 {
-    public class RiderAddressModel : BaseModel
+    public class CreateRiderAddressRequest
     {
         public string Street { get; set; }
 

@@ -1,5 +1,5 @@
-using DataAccess.Extensions;
-using Business.Extensions;
+using RanApp.DataAccess.Extensions;
+using RanApp.Business.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

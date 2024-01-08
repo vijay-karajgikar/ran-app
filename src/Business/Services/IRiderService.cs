@@ -1,13 +1,17 @@
-using Models.RanModels;
+using Models.Request.Rider;
+using RanApp.Models.RanModels;
+using RanApp.Models.Request.Rider;
 
-namespace Business.Services
+namespace RanApp.Business.Services
 {
     public interface IRiderService
     {
-        RiderModel AddRider(RiderModel riderModel);
+        Task<RiderModel> Create(CreateRiderRequest request);
 
-        RiderModel UpdateRider(RiderModel riderModel);
+        Task<RiderModel> Update(UpdateRiderRequest request);
 
-        RiderModel AddRiderAddress(RiderModel riderModel);
+        Task<List<RiderModel>> Search(SearchRiderRequest request);
+
+        Task<bool> Delete(string id);
     }
 }

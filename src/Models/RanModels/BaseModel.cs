@@ -1,4 +1,4 @@
-namespace Models.RanModels
+namespace RanApp.Models.RanModels
 {
     public class BaseModel
     {        

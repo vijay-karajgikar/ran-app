@@ -1,5 +1,5 @@
 
-namespace DataAccess.Domain
+namespace RanApp.DataAccess.Domain
 {
     public class RiderAddress : BaseDomain
     {
